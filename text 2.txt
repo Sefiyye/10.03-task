@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+        }
+        public static int Third(int num)
+        {
+            int tempVar = 3;
+            int newNum = num;
+
+            while(num>0)
+            {
+                int remainder = num % 10;
+                tempVar *= 10;
+                num /= 10;
+
+            }
+            int total = tempVar + newNum;
+            Console.WriteLine(total);
+            return total;
+        }
+    }
+}
